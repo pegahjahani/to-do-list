@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+div, nav, section, main, aside, footer, header, span, ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+:root {
+  --main-blue: #1572A1;
+  --main-green: #68EACC;
+  --main-grey: #f2f2f2;
+  --main-red: #e74c3c;
+  --main-white: #fff;
+  --sub-blue: #86C6F4;
+  --sub-grey: #ccc;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--main-green)), to(var(--sub-blue)));
+  background: linear-gradient(to bottom, var(--main-green), var(--sub-blue));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main > .todo {
+  width: 400px;
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main > .todo > h1 {
+  width: 100%;
+  height: 30px;
+  color: black;
+  font-weight: bold;
+  margin: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.main > .todo .add {
+  width: 100%;
+  height: 40px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main > .todo .add > input {
+  width: 70%;
+  height: 35px;
+  border-radius: 3px;
+  border: 1px solid #acabab;
+  padding: 10px;
+}
+
+.main > .todo .add button {
+  width: 35px;
+  height: 35px;
+  background-color: #1572A1;
+  color: white;
+  font-weight: bolder;
+  font-size: 22px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.main > .todo .box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.main > .todo .box ul {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3px;
+}
+
+.main > .todo .box ul li {
+  width: 344px;
+  height: 40px !important;
+  background-color: #ccc;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-left: 28px;
+}
+
+.main > .todo .box ul li p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 5px;
+}
+
+.main > .todo .box ul li span {
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  cursor: pointer;
+  background-color: #e74c3c;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#btnedit {
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#btnedit > button {
+  width: 80px;
+  height: 40px;
+  background-color: #1572A1;
+  color: #f2f2f2;
+  border: none;
+  border-radius: 3px;
+  display: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+._block {
+  display: block;
+}
+/*# sourceMappingURL=master.css.map */
